@@ -4,7 +4,9 @@
 
 End-to-end intent classification across 77 banking categories, comparing TF-IDF with Logistic Regression, SimpleRNN, Bidirectional LSTM, and fine-tuned DistilBERT.
 
-![Banking77 Streamlit application](assets/app-screenshot.jpg)
+![Banking77 Streamlit demo](assets/app-demo.gif)
+
+[Download the HD MP4 demo](assets/app-demo.mp4)
 
 ## DistilBERT Results
 
@@ -27,7 +29,8 @@ Python, Pandas, NumPy, scikit-learn, TF-IDF, TensorFlow, SimpleRNN, BiLSTM, PyTo
 ├── nlp_project.ipynb
 ├── run_distilbert_cpu.py
 ├── artifacts/distilbert/metrics.json
-├── assets/app-screenshot.jpg
+├── assets/app-demo.gif
+├── assets/app-demo.mp4
 ├── requirements.txt
 ├── requirements-notebook.txt
 ├── LICENSE
