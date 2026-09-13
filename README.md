@@ -1,5 +1,7 @@
 # Banking77 Intent Classification
 
+**[Open the live Streamlit app](https://karim797-banking77-nlp.streamlit.app/)**
+
 Intent classification across 77 banking categories, progressing from TF-IDF and Logistic Regression to recurrent neural networks and an optional DistilBERT experiment.
 
 No API key is required. The dataset is public and the models run locally or in Google Colab.
