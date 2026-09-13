@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+joblib
+tensorflow
+datasets
+transformers
+torch
+accelerate
