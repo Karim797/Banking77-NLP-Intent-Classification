@@ -13,7 +13,7 @@ End-to-end intent classification across 77 banking categories, comparing TF-IDF 
 | Model | Official test macro F1 |
 |---|---:|
 | **TF-IDF (word + character n-grams) + Logistic Regression** | **0.9128** |
-| DistilBERT, fine-tuned with embeddings and lower two layers frozen | 0.9040 |
+| DistilBERT, previous companion run¹ | 0.9040 |
 
 - Official test accuracy: **0.9127**
 - Train-only macro F1: **0.9097**
@@ -25,6 +25,16 @@ End-to-end intent classification across 77 banking categories, comparing TF-IDF 
 - Accuracy on routed validation traffic: **95.15%**
 
 The Streamlit application loads the validated, full-pool-refitted artifact. Queries below the saved confidence threshold are escalated for human review instead of being routed speculatively.
+
+¹The DistilBERT number is a real result from the committed companion run, but that run used an 80/20 training/validation split while the final TF-IDF experiment used 85/15. The comparison is therefore approximate rather than strictly like-for-like. DistilBERT is an optional benchmark experiment; it is not the model served by the application.
+
+## MVP Status
+
+- Production model: **TF-IDF word + character n-grams with Logistic Regression**
+- Saved model, label mapping, confidence threshold, and provenance metadata included
+- Streamlit inference runs directly from the committed artifact; no training or API key is required
+- Low-confidence messages are escalated instead of being assigned a speculative intent
+- DistilBERT is retained as a documented comparison and is not required to run the MVP
 
 ## Technologies
 
