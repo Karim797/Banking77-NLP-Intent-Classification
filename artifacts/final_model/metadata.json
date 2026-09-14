@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "selected_model": "TF-IDF + LogReg",
+  "selection_criterion": "highest validation macro F1",
+  "confidence_threshold": 0.45,
+  "threshold_selection_rule": "highest threshold with >= 90% validation coverage",
+  "threshold_sweep": [
+    {
+      "threshold": 0.2,
+      "coverage": 0.977348434377082,
+      "accuracy_routed": 0.9250170415814588,
+      "accuracy_escalated": 0.4411764705882353,
+      "escalated_pct": 2.2651565622918035
+    },
+    {
+      "threshold": 0.25,
+      "coverage": 0.9633577614923384,
+      "accuracy_routed": 0.9315352697095436,
+      "accuracy_escalated": 0.45454545454545453,
+      "escalated_pct": 3.6642238507661573
+    },
+    {
+      "threshold": 0.3,
+      "coverage": 0.9566955363091273,
+      "accuracy_routed": 0.9352367688022284,
+      "accuracy_escalated": 0.4461538461538462,
+      "escalated_pct": 4.330446369087271
+    },
+    {
+      "threshold": 0.35,
+      "coverage": 0.9407061958694204,
+      "accuracy_routed": 0.9412181303116147,
+      "accuracy_escalated": 0.48314606741573035,
+      "escalated_pct": 5.929380413057961
+    },
+    {
+      "threshold": 0.4,
+      "coverage": 0.9260493004663558,
+      "accuracy_routed": 0.9446043165467626,
+      "accuracy_escalated": 0.5315315315315315,
+      "escalated_pct": 7.39506995336442
+    },
+    {
+      "threshold": 0.45,
+      "coverage": 0.9073950699533644,
+      "accuracy_routed": 0.9515418502202643,
+      "accuracy_escalated": 0.5467625899280576,
+      "escalated_pct": 9.260493004663562
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.8814123917388408,
+      "accuracy_routed": 0.9584278155706727,
+      "accuracy_escalated": 0.5842696629213483,
+      "escalated_pct": 11.858760826115923
+    },
+    {
+      "threshold": 0.55,
+      "coverage": 0.8594270486342438,
+      "accuracy_routed": 0.9643410852713178,
+      "accuracy_escalated": 0.6066350710900474,
+      "escalated_pct": 14.05729513657562
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.8367754830113258,
+      "accuracy_routed": 0.9665605095541401,
+      "accuracy_escalated": 0.6448979591836734,
+      "escalated_pct": 16.322451698867425
+    }
+  ],
+  "git_sha": "5e9670d",
+  "train_sha256": "c13c6d140f3072e1",
+  "test_sha256": "e10f6bc95fe4e3eb",
+  "refitted_on_full_pool": true,
+  "n_fit_examples": 10003,
+  "dataset": "PolyAI/banking77 (official train/test split)",
+  "data_source_used": "github:PolyAI-LDN/task-specific-datasets",
+  "seed": 42,
+  "validation_fraction": 0.15,
+  "n_train": 8502,
+  "n_val": 1501,
+  "n_test": 3080,
+  "validation_metrics": {
+    "accuracy": 0.9140572951365756,
+    "macro_precision": 0.9188540553675503,
+    "macro_recall": 0.9147740421372711,
+    "macro_f1": 0.914799919652164,
+    "weighted_f1": 0.9140336865868532,
+    "train_seconds": 28.89048671722412
+  },
+  "test_metrics": {
+    "accuracy": 0.9126623376623376,
+    "macro_precision": 0.9162343883485453,
+    "macro_recall": 0.9126623376623377,
+    "macro_f1": 0.9127786276732549,
+    "weighted_f1": 0.9127786276732549
+  },
+  "library_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "tensorflow": null
+  }
+}
